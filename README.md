@@ -37,17 +37,19 @@ Example: \# 1 Kokinshu
 01:000001:0021 A10 BG-09-0010-02-0100 む む む 74 
 ``` 
 ### A line consists of 7 columns separated by spaces.
-1. 1st column consists of 3 fields: 1) anthology, 2) number of poem, and 3) token ID.
+- 1st column consists of 3 fields: 1) anthology, 2) number of poem, and 3) token ID.
 The anthology ID indicates respectively: 01..Kokinshu, 02..Gosenshu, 03..Shuishu, 04..Goshuishu, 05..Kin'yoshu, 06..Shikashu, 07..Senzaishu, and 08..Shinkokinshu.
-1. 2nd column indicates type of token: A type is a single token; B type is a compound token; C type is a breakdown of B type.
+- 2nd column indicates type of token: A type is a single token; B type is a compound token; C type is a breakdown of B type.
 A00 indicates a single token; A01 indicates a single token and has another meaning; 
 B00 indicates a compound token; B01 indicates a compound token which has another meaning;
 C00 indicates the first element of the B00/B01.. breakdown; C01 indicates the second element of the B00/B01.. breakdown.
-1. 3rd column: classification ID based on semantic categories according to Bunruigoihyo.
-  yamagen2009ae
-  yamagen2007de
-1. 4th column indicates original (appearing form).
-1. 5th column indicates kana writing form.
-1. 6th column indicates lemma.
-1. 7th column indicates a Chasen POS number.
+- 3rd column: classification ID based on semantic categories according to Bunruigoihyo.
+<!--
+yamagen2009ae
+yamagen2007de
+-->
+- 4th column indicates original (appearing form).
+- 5th column indicates kana writing form.
+- 6th column indicates lemma.
+- 7th column indicates a Chasen POS number.
 
