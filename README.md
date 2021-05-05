@@ -44,12 +44,57 @@ A00 indicates a single token; A01 indicates a single token and has another meani
 B00 indicates a compound token; B01 indicates a compound token which has another meaning;
 C00 indicates the first element of the B00/B01.. breakdown; C01 indicates the second element of the B00/B01.. breakdown.
 - 3rd column: classification ID based on semantic categories according to Bunruigoihyo.
-<!--
-yamagen2009ae
-yamagen2007de
--->
 - 4th column indicates original (appearing form).
 - 5th column indicates kana writing form.
 - 6th column indicates lemma.
 - 7th column indicates a Chasen POS number.
 
+## Reference
+
+1. Yamamoto, Hilofumi (2007) 
+  Thesaurus of Japanese Poetic Vocabulary Based on the Semantic Classifications Chart,
+  The 13th Annual Symposium for Database of the Humanities, 
+  1-8, 
+  The Association for Database of the Humanities,
+  Osaka.
+
+1. Yamamoto, Hilofumi (2009) 
+  Thesaurus for the Hachidaishu (ca. 905-1205) with the classification codes based on semantic principles,
+  Nihongo no Kenkyu / Studies in the Japanese Language,
+  46-52,
+  Society for Japanese Linguistics,
+  5, 1, 
+  ISSN1349-5119.
+
+<!--
+@Article{yamagen2009ae,
+  author = 	 {Yamamoto, Hilofumi},
+  title = 	 {Thesaurus for the Hachidaishu (ca.\,905--1205) with the classification codes based on semantic principles},
+  journal =      {Nihongo no Kenkyu / {S}tudies in the Japanese Language},
+  pages = 	 {46--52},
+  OPTpublisher = {Society for Japanese Linguistics},
+  year = 	 {2009},
+  volume = 	 {5},
+  number = 	 {1},
+  OPTedition = 	 {ISSN1349-5119},
+  OPTmonth = 	 {},
+  OPTnote = 	 {},
+  OPTannote = 	 {},
+  OPTlocation =  {},
+  OPTmemo = 	 {}
+}
+
+@InCollection{yamagen2007de,
+  author = 	 {Yamamoto, Hilofumi},
+  title = 	 {Thesaurus of Japanese Poetic Vocabulary Based on the Semantic
+      Classifications Chart},
+  year = 	 {2007},
+  booktitle = 	 {The 13th Annual Symposium for Database of the Humanities}, 
+  pages = 	 {1--8},
+  publisher =    {The Association for Database of the Humanities},
+  address = 	 {Osaka},
+  OPTedition = 	 {},
+  OPTmonth = 	 {2007.12},
+  OPTmemo = 	 {}
+}
+-->
