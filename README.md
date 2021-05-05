@@ -66,7 +66,24 @@ C00 indicates the first element of the B00/B01.. breakdown; C01 indicates the se
   5, 1, 
   ISSN1349-5119.
 
+1. Yamamoto, Hilofumi (2021)
+  Hachidaishu vocabulary dataset,
+  Zenodo,
+  version 1.0.0,
+ <https://doi.org/10.5281/zenodo.4735848>.
+  
 <!--
+@dataset{yamamoto_hilofumi_2021_4735848,
+  author       = {Yamamoto, Hilofumi},
+  title        = {Hachidaishu vocabulary dataset},
+  month        = may,
+  year         = 2021,
+  publisher    = {Zenodo},
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.4735848},
+  url          = {https://doi.org/10.5281/zenodo.4735848}
+}
+
 @Article{yamagen2009ae,
   author = 	 {Yamamoto, Hilofumi},
   title = 	 {Thesaurus for the Hachidaishu (ca.\,905--1205) with the classification codes based on semantic principles},
