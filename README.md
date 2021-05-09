@@ -74,13 +74,14 @@ C00 indicates the first element of the B00/B01.. breakdown; C01 indicates the se
 1. Yamamoto, Hilofumi (2021)
   Hachidaishu vocabulary dataset,
   Zenodo,
-  version 1.0.0,
- <https://doi.org/10.5281/zenodo.4735848>.
+  version 1.0.1,
+  <https://doi.org/10.5281/zenodo.4744170>
 
 1. Yamazaki, Makoto and Kashino, Wakako and Uchiyama, Kiyoko and Sunaoka, Kazuko, and Tajima, Ikudo and Yamamoto, Hilofumi and Han, Yoo-Sik and Seol, Geun-Su (2014)
   Bunruigoihyo zouhokaiteiban" e no anotashion: kihongi no kettei (in Japanese),
   Keiryo Kokugo gakkai dai 58 kai taikai yokoshu,
   pp. 7--12.
+
 
 <!--
 @dataset{yamamoto_hilofumi_2021_4735848,
