@@ -78,10 +78,13 @@ C00 indicates the first element of the B00/B01.. breakdown; C01 indicates the se
   <https://doi.org/10.5281/zenodo.4744170>
 
 1. Yamazaki, Makoto and Kashino, Wakako and Uchiyama, Kiyoko and Sunaoka, Kazuko, and Tajima, Ikudo and Yamamoto, Hilofumi and Han, Yoo-Sik and Seol, Geun-Su (2014)
-  Bunruigoihyo zouhokaiteiban" e no anotashion: kihongi no kettei (in Japanese),
+  Bunruigoihyo zouhokaiteiban" e no anoteishion: kihongi no kettei (in Japanese),
   Keiryo Kokugo gakkai dai 58 kai taikai yokoshu,
   pp. 7--12.
 
+1. [国文学研究資料館二十一代集](http://kotenseki.nijl.ac.jp/biblio/200007092)
+
+1. [二十一代集 DOI: 10.20730/200007092](http://codh.rois.ac.jp/pmjt/book/200007092/): ROIS-DS人文学オープンデータ共同利用センター 新日本古典籍総合データベース（200007093）
 
 <!--
 @dataset{yamamoto_hilofumi_2021_4735848,
