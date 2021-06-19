@@ -1,5 +1,6 @@
 # Hachidaishu classical Japanese poetic vocabulary dataset
 ## Hilofumi Yamamoto, Ph.D. (Tokyo Institute of Technology)
+## Bor Hodošček, D.Engineering (Osaka University)
 
 ### Data offset
 
