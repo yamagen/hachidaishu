@@ -55,6 +55,10 @@ C00 indicates the first element of the B00/B01.. breakdown; C01 indicates the se
 - 8th column indicates conjugated form in kanji writing form.
 - 9th column indicates conjugated form in kana writing form.
 
+## Notebook
+
+Please see the [notebook](Hachidaishu_Vocabulary_Dataset_Examples.ipynb) provided in this repository for some examples on loading and analysing the dataset from Python.
+
 ## Reference
 
 1. Yamamoto, Hilofumi (2007) 
