@@ -1,10 +1,26 @@
 # Hachidaishu classical Japanese poetic vocabulary dataset
-## Hilofumi Yamamoto, Ph.D. (Tokyo Institute of Technology)
-## Bor Hodošček, D.Engineering (Osaka University)
+
+Hilofumi Yamamoto, Ph.D. (Tokyo Institute of Technology)
+
+Bor Hodošček, D.Engineering (Osaka University)
+
+## TEI format
+
+The Hachidaishu database encoded into TEI format is in the `hachidaishu.xml` file.
+It was generated using the [Hachidaishu_WLSP_TEI_Conversion.ipynb](Hachidaishu_WLSP_TEI_Conversion.ipynb) notebook contained in this repository.
+The notebook uses (mostly) publicly available resources to create the TEI encoding in conjunction with the two Python scripts `dictionaryconverter.py` and `hachidaishu.py` in this repo.
+[dictionaryconverter.py](dictionaryconverter.py) defines the IPAdic to UniDic and UniDic to UD POS mappings, while [hachidaishu.py](hachidaishu.py) is a helper library for reading the `hachidai.db` database format.
+
+## JSONL
+
+A simplified version of the TEI encoding is available in a flat JSON line-delimited format.
+
+## `hachidai.db` database format
 
 ### Data offset
 
-Example: \# 1 Kokinshu
+Example: \#1 Kokinshu
+
 ```
 01:000001:0001 A00 BG-01-1630-01-0100 02 年 年 とし 年 とし 
 01:000001:0001 A10 BG-01-1911-03-1800 02 年 年 とし 年 とし 
@@ -37,16 +53,19 @@ Example: \# 1 Kokinshu
 01:000001:0021 A00 BG-03-3012-03-2600 74 ん む む む む 
 01:000001:0021 A10 BG-09-0010-02-0102 74 ん む む む む 
 ``` 
-### A line consists of 7 columns separated by spaces.
+
+A line consists of 7 columns separated by spaces.
+
 ```
 01:000001:0007 A00 BG-02-1527-01-0102 47 き 来 く 来 き 
 ```
+
 - 1st column "01:000001:0007" consists of 3 fields: 1) anthology, 2) number of poem, and 3) serial ID of the token.
 The anthology ID indicates respectively: 01..Kokinshu, 02..Gosenshu, 03..Shuishu, 04..Goshuishu, 05..Kin'yoshu, 06..Shikashu, 07..Senzaishu, and 08..Shinkokinshu.
 - 2nd column indicates type of token: A type is a single token; B type is a compound token; C type is a breakdown of B type.
-A00 indicates a single token; A01 indicates a single token and has another meaning; 
-B00 indicates a compound token; B01 indicates a compound token which has another meaning;
-C00 indicates the first element of the B00/B01.. breakdown; C01 indicates the second element of the B00/B01.. breakdown.
+  A00 indicates a single token; A01 indicates a single token and has another meaning; 
+  B00 indicates a compound token; B01 indicates a compound token which has another meaning;
+  C00 indicates the first element of the B00/B01.. breakdown; C01 indicates the second element of the B00/B01.. breakdown.
 - 3rd column "BG-02-1527-01-0102": classification ID based on semantic categories according to Bunruigoihyo (Yamazaki et al. 2014).
 - 4th column indicates a Chasen POS number.
 - 5th column indicates surface form: a form appears in literary works.
@@ -55,11 +74,12 @@ C00 indicates the first element of the B00/B01.. breakdown; C01 indicates the se
 - 8th column indicates conjugated form in kanji writing form.
 - 9th column indicates conjugated form in kana writing form.
 
-## Notebook
+### Notebook
 
 Please see the [notebook](Hachidaishu_Vocabulary_Dataset_Examples.ipynb) provided in this repository for some examples on loading and analysing the dataset from Python.
+Note that a newer version of the code was refactored into [hachidaishu.py](hachidaishu.py).
 
-## Reference
+## References
 
 1. Yamamoto, Hilofumi (2007) 
   Thesaurus of Japanese Poetic Vocabulary Based on the Semantic Classifications Chart,
@@ -68,7 +88,7 @@ Please see the [notebook](Hachidaishu_Vocabulary_Dataset_Examples.ipynb) provide
   The Association for Database of the Humanities,
   Osaka.
 
-1. Yamamoto, Hilofumi (2009) 
+2. Yamamoto, Hilofumi (2009) 
   Thesaurus for the Hachidaishu (ca. 905-1205) with the classification codes based on semantic principles,
   Nihongo no Kenkyu / Studies in the Japanese Language,
   46-52,
@@ -76,20 +96,20 @@ Please see the [notebook](Hachidaishu_Vocabulary_Dataset_Examples.ipynb) provide
   5, 1, 
   ISSN1349-5119.
 
-1. Yamamoto, Hilofumi (2021)
+3. Yamamoto, Hilofumi (2021)
   Hachidaishu vocabulary dataset,
   Zenodo,
   version 1.0.1,
   <https://doi.org/10.5281/zenodo.4744170>
 
-1. Yamazaki, Makoto and Kashino, Wakako and Uchiyama, Kiyoko and Sunaoka, Kazuko, and Tajima, Ikudo and Yamamoto, Hilofumi and Han, Yoo-Sik and Seol, Geun-Su (2014)
+4. Yamazaki, Makoto and Kashino, Wakako and Uchiyama, Kiyoko and Sunaoka, Kazuko, and Tajima, Ikudo and Yamamoto, Hilofumi and Han, Yoo-Sik and Seol, Geun-Su (2014)
   Bunruigoihyo zouhokaiteiban" e no anoteishion: kihongi no kettei (in Japanese),
   Keiryo Kokugo gakkai dai 58 kai taikai yokoshu,
   pp. 7--12.
 
-1. [国文学研究資料館二十一代集](http://kotenseki.nijl.ac.jp/biblio/200007092)
+5. [国文学研究資料館二十一代集](http://kotenseki.nijl.ac.jp/biblio/200007092)
 
-1. [二十一代集 DOI: 10.20730/200007092](http://codh.rois.ac.jp/pmjt/book/200007092/): ROIS-DS人文学オープンデータ共同利用センター 新日本古典籍総合データベース（200007093）
+6. [二十一代集 DOI: 10.20730/200007092](http://codh.rois.ac.jp/pmjt/book/200007092/): ROIS-DS人文学オープンデータ共同利用センター 新日本古典籍総合データベース（200007093）
 
 <!--
 @dataset{yamamoto_hilofumi_2021_4735848,
