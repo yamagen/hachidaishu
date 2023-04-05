@@ -27,7 +27,7 @@ class Token:
     ipa_pos: str = field(init=False)
     ipa_en_pos: str = field(init=False)
     unidic_pos: str = field(init=False)
-    ud_pos: str = field(init=False)
+    ud_pos: str | None = field(init=False)
     surface: str
     lemma: str
     lemma_reading: str
@@ -55,8 +55,8 @@ class Decomposition:
     tokens: List[Token]
     decomposition_type: str
 
-    def __iter__(self):
-        return iter(astuple(self.tokens))
+    # def __iter__(self):
+    #     return iter(astuple(self.tokens))
 
     def __getitem__(self, index: int) -> Token:
         return self.tokens[index]
@@ -229,7 +229,7 @@ class HachidaishuDB:
         )
         return "\n".join(
             delimiter.join(record.token().surface for record in poem)
-            for poem_info, poem in by_poem
+            for _poem_info, poem in by_poem
         )
 
 
@@ -249,4 +249,4 @@ if __name__ == "__main__":
         print(f"{token}: {freq}")
 
     print("Printing space-delimited corpus.")
-    print(db.text())
+    print(db.text(poem=1))
