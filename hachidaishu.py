@@ -330,20 +330,20 @@ class HachidaishuDB:
                     id,
                     token_type,
                     bg_id,
-                    chasen_id,
-                    surface,
                     lemma,
                     lemma_reading,
                     kanji,
-                    kanji_reading,
+                    chasen_id,
                 ) = fields
+                surface = ""
+                kanji_reading = ""
                 anthology, poem, serial = id.split(":")
                 decomposition_type = token_type[0]
                 token = Token(
                     token_type,
                     bg_id,
                     chasen_id,
-                    re.sub(r"[〈〉]", "", surface),
+                    re.sub(r"[〈〉]", "〱", surface),
                     lemma,
                     lemma_reading,
                     kanji,

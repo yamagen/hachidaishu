@@ -1,0 +1,6 @@
+[submodule "bunrui/wlsp2unidic"]
+	path = bunrui/wlsp2unidic
+	url = https://github.com/masayu-a/WLSP2UniDic
+[submodule "bunrui/wlsp"]
+	path = bunrui/wlsp
+	url = https://github.com/masayu-a/WLSP.git
